@@ -1,0 +1,517 @@
+
+Language:
+
+	communication
+
+Programming Language:
+--------------------
+	communication with machine
+
+
+	software-->program-->set of instructions
+
+
+guido van russam
+
+	1989
+	
+	1991 feb 20th
+
+
+	syntax
+
+Welcome.java 
+
+	class Welcome
+	{
+	public static void main(String args[])
+	{
+	System.out.println("welcome to java");
+	}
+	}
+	
+	
+python
+
+		print("welcome to python")
+
+1)Functional Programming from C 
+2)OOP features from C++
+3)scripting lang features from shell script
+4)modular programming features from modula-3
+
+
+Applications:
+=============
+
+1)dekstop / standalone app notepad++,vscode,python,media player... core python,tkinter
+2)web applications gmail,amazon,....  Django,flask
+3)database apps  PDBC
+4)networking 
+5)gaming apps
+6)AI
+7)ML
+8)DS
+9)IOT
+.....
+
+
+Features:
+===========
+simple
+
+	30+
+
+free source and open source
+
+	jython
+
+high level 
+
+platform independent	WORA
+
+portable 
+
+dynamic typed 
+
+		int marks=2345;//static typed
+			marks="234";//dynamic typed
+
+interpreted-->PVM
+
+
+flavours:
+
+
+Cpython
+jython
+ironpython
+ruby python
+
+versions
+
+	1.x 1994
+	2.x 2000
+	3.x	2008
+
+
+Identifiers:
+============
+any name in  python 
+
+print
+class name
+function name
+variable name
+object name
+label name
+.....
+		a-z
+		A-Z
+		0-9
+		_
+		
+Reserved words:
+================		
+		
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue',
+ 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in',
+ 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 
+ 'yield']
+
+
+true
+
+
+Datatypes:
+===========
+
+
+int
+float
+complex
+bool
+str
+range
+
+List
+set
+tuple
+frozenset
+dict
+
+
+	print()
+	type()
+	id()
+	
+	
+	
+	typecasting
+
+
+		12+13=25
+		"12"+"13"=1213
+		
+		input()-->string
+		
+			a=int("123")
+			a=123
+immutable
+
+
+							c
+a=10						|
+b=10					b-->10<--a   garbage collection
+c=10		immutable
+			c=123
+		
+a=10,20,30
+		
+Advanced DT:
+===========
+List
+set
+tuple
+frozenset
+dict
+
+
+
+
+List:
+ if we want represent group objects as single entity
+
+1)duplicates are allowed 
+2)insertion order is preserved
+3)homogeneous and haterogeneous object are allowed 
+4)Growable in nature
+5)[]
+6)muttable
+
+
+
+Tuple:
+ if we want represent group objects as single entity
+
+1)duplicates are allowed 
+2)insertion order is preserved
+3)homogeneous and haterogeneous object are allowed 
+4)()
+5)imuttable
+
+
+
+
+Set:
+ if we want represent group objects as single entity
+
+1)duplicates are not allowed 
+2)insertion order is not preserved
+3)homogeneous and haterogeneous object are allowed 
+4)Growable in nature
+5){} index is not applicable
+6)muttable
+
+
+
+FrozenSet:
+ if we want represent group objects as single entity
+
+1)duplicates are not allowed 
+2)insertion order is not preserved
+3)homogeneous and haterogeneous object are allowed 
+5){}-->frozenset index is not applicable
+6)imuttable
+
+
+Dict:
+if we want to represent group of objects as a key,value pair 
+
+{}
+duplicate keys are not allowed,if we are trying to add duplicate key it will update the value
+and 
+values can be duplicate
+
+key and value can be any datatype
+
+muttable
+
+
+
+
+py
+
+
+>>> import keyword
+>>> keyword.kwlist
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+>>> eid=123
+>>> print(eid)
+123
+>>> type(eid)
+<class 'int'>
+>>> eid='jpmc123'
+>>> type(eid)
+<class 'str'>
+>>> marks=789.567
+>>> type(marks)
+<class 'float'>
+>>> result=3+6j
+>>> type(result)
+<class 'complex'>
+>>> result.real
+3.0
+>>> result.imag
+6.0
+>>> value=true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined. Did you mean: 'True'?
+>>> value=True
+>>> type(value)
+<class 'bool'>
+>>> a=12
+>>> b=13
+>>> a>b
+False
+>>> name=""" india
+... hyderabad
+... banglore
+... delhi"""
+>>> type(name)
+<class 'str'>
+>>> name="india 'hyderabad'"
+>>> print(name)
+india 'hyderabad'
+>>> name='india "hyderabad"'
+>>> print(name)
+india "hyderabad"
+>>> orgname='jpmc hyderabad india'
+>>> type(orgname\)
+  File "<stdin>", line 1
+    type(orgname\)
+                 ^
+SyntaxError: unexpected character after line continuation character
+>>> type(orgname)
+<class 'str'>
+>>> print(orgname)
+jpmc hyderabad india
+>>> id(orgname)
+1412047017488
+>>> print(orgname)
+jpmc hyderabad india
+>>> orgname[0]
+'j'
+>>> orgname[1]
+'p'
+>>> orgname[2]
+'m'
+>>> orgname[0:5]
+'jpmc '
+>>> orgname[0:3]
+'jpm'
+>>> orgname[-1]
+'a'
+>>> orgname[1:]
+'pmc hyderabad india'
+>>> orgname[:4]
+'jpmc'
+>>> len(orgname)
+20
+>>> a=123
+>>> b=234
+>>> a+b
+357
+>>>
+>>> a+b
+357
+>>> a+b
+357
+>>> b=234
+>>> a+b
+357
+>>> empname=input("enter your name")
+enter your namesandeep
+>>> print(empname)
+sandeep
+>>> type(empname)
+<class 'str'>
+>>> empage=input("enter your age")
+enter your age90
+>>> type(empage)
+<class 'str'>
+>>> empage=int(input("enter your age"))
+enter your age23
+>>> type(empage)
+<class 'int'>
+>>> print(empage)
+23
+>>> int(123.43)
+123
+>>> int(True)
+1
+>>> int(False)
+0
+>>> int("123")
+123
+>>> int("ten")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'ten'
+>>> float(12)
+12.0
+>>> float(True)
+1.0
+>>> float(False)
+0.0
+>>> float("1234")
+1234.0
+>>> bool(0)
+False
+>>> bool("True")
+True
+>>> bool("False")
+True
+>>> bool("")
+False
+>>> str(12.32)
+'12.32'
+>>> a=123
+>>> b=123
+>>> c=123
+>>> id(a)
+140719723307624
+>>> id(b)
+140719723307624
+>>> d=124
+>>> id(d)
+140719723307656
+>>> names=['suresh','naresh','rajesh','somesh',suresh,'mukesh']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'suresh' is not defined
+>>> names=['suresh','naresh','rajesh','somesh','suresh','mukesh']
+>>> type(names)
+<class 'list'>
+>>> print(names)
+['suresh', 'naresh', 'rajesh', 'somesh', 'suresh', 'mukesh']
+>>> names.add('sandeep')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'add'
+>>> names.append('sandeep')
+>>> print(names)
+['suresh', 'naresh', 'rajesh', 'somesh', 'suresh', 'mukesh', 'sandeep']
+>>> names.remove('sandeep')
+>>> print(names)
+['suresh', 'naresh', 'rajesh', 'somesh', 'suresh', 'mukesh']
+>>> empinfo=[123,'suresh',23456.34,True,123]
+>>> type(empinfo)
+<class 'list'>
+>>> empinfo[0]
+123
+>>> empinfo[-1]
+123
+>>> empinfo[0,3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list indices must be integers or slices, not tuple
+>>> empinfo[0:3]
+[123, 'suresh', 23456.34]
+>>> empinfo.append(1,'rajesh')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list.append() takes exactly one argument (2 given)
+>>> list.insert(2,'xyz')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: descriptor 'insert' for 'list' objects doesn't apply to a 'int' object
+>>> empinfo.insert(2,'xyz')
+>>> print(empinfo)
+[123, 'suresh', 'xyz', 23456.34, True, 123]
+>>> emps=(12,23,43,11,12,44)
+>>> type(emps)
+<class 'tuple'>
+>>> print(emps)
+(12, 23, 43, 11, 12, 44)
+>>> emps.add(1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'add'
+>>> emps.append(1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'append'
+>>> students={'naresh','mahesh','kiran','ramana','mahesh','suresh'}
+>>> type(students)
+<class 'set'>
+>>> print(students)
+{'ramana', 'suresh', 'mahesh', 'naresh', 'kiran'}
+>>> students.add(True)
+>>> print(students)
+{True, 'ramana', 'suresh', 'mahesh', 'naresh', 'kiran'}
+>>> stu=frozenset(students)
+>>> type(stu)
+<class 'frozenset'>
+>>> stu.add(123)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'frozenset' object has no attribute 'add'
+>>> students.remove(True)
+>>> print(students)
+{'ramana', 'suresh', 'mahesh', 'naresh', 'kiran'}
+>>> studs={123:'naresh',324,'rajesh',432:"sandeep",324:"jpmc"}
+  File "<stdin>", line 1
+    studs={123:'naresh',324,'rajesh',432:"sandeep",324:"jpmc"}
+                          ^
+SyntaxError: ':' expected after dictionary key
+>>> studs={123:'naresh',324:'rajesh',432:"sandeep",324:"jpmc"}
+>>> print(studs)
+{123: 'naresh', 324: 'jpmc', 432: 'sandeep'}
+>>> type(studs)
+<class 'dict'>
+>>> studs[222]='revanth'
+>>> type(studs)
+<class 'dict'>
+>>> print(studs)
+{123: 'naresh', 324: 'jpmc', 432: 'sandeep', 222: 'revanth'}
+
+
+python
+ files
+
+space
+
+syntax
+
+welcome.py
+
+
+
+Flow control statements	
+	if
+	if-else
+	for
+	do-while
+	while
+	else
+	break
+	continue
+	
+functions:
+=============
+print
+def 
+
+
+
+
+
+
+
+
+
+
+
+
