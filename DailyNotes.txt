@@ -827,8 +827,22 @@ python manage.py startapp crudapp
 py manage.py makemigrations	
 py manage.py migrate	
 		
+pandas is  pythn library 
+
+data sets
 		
 		
+		panel data 
+		python data analysis
 		
+		mckinney 2008
 		
+		pip install pandas
 		
+		import pandas as pd
+		
+	Series
+
+		column table
+
+	
