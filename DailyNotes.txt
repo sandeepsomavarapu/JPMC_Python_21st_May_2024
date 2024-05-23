@@ -506,12 +506,329 @@ def
 
 
 
+Input/output
+
+
+open --->r,a,w
+close
+read
+readLines
+write....
+
+
+
+modules-->packages-->c
+
+FUNCTIONAL PROGRAMMING:
+======================
+
+LAMBDA FUNCTIONS
+	
+DEF
+
+return 
+
+
+class is blue print
 
 
 
 
+class Demo:
+	
+	def __init__():
+	
+	
+	def __init__(a,b):
+	
+	
+	def m1():
+		
+		
+		
+	obj=Demo(12,13)	
+		
+
+
+variables
+		local 	inside the method
+		global  outside the method and with in the class
+		
+			instance-->new memory for every object creation
+			static--->common memory
+		
+		
+		self-->current class object
+		
+		
+	class
+	object
+	constructor
+	self
+
+inheritance
+===========
+getting the features from one class to another class
 
 
 
+code reusability
 
 
+
+class Test:
+
+200 methods
+
+
+
+class Client(Test):			class A(Test):
+
+30 methods
+
+
+Exception handling:
+===================
+
+	with out exception handling
+	
+	1)abnormal termination
+	2)system defined error messages
+	
+	try --error code/risky code
+	except--handling code
+	finally-->cllean up code
+	raise--->
+	
+							BaseException
+							
+		Exception					
+
+
+		ValueError
+		TypeError
+		FileNotFound
+		IndexError
+		ZeroDivisionError
+		
+
+		try
+		finally					valid
+		
+		
+		try 
+		except					valid
+		
+		try
+		except
+		finally					valid
+		
+		
+		
+		try
+		finally
+		except					invalid
+		
+		
+		try						invalid
+		
+		
+		
+		except
+		finally					invalid
+		
+		
+		try
+		print()					invalid
+		except			
+		
+		
+		try
+		except
+		except					valid
+		except		
+		
+		try
+			try					valid
+			except
+		except
+	
+		try
+		except					valid
+			try
+			except
+			except
+
+
+	raise pvm
+	
+	len(name)<6
+		raise zerodivsionerror()
+
+userdefined exception classes 
+	
+		1)take one class make that as child to anyone of the parent exception class
+		2)param constructor
+		
+			raise 
+			
+Regular expressions:
+===================			
+			
+			re
+			
+			
+			import re
+			
+compile()
+
+			pattern=re.compile("")
+			
+finditer()			
+		
+	iterator object	-->matcher
+
+		start()
+		end()-->end+1
+		group()
+			
+			
+		match()
+		fullmatch()
+		search()
+			
+			
+	REST API
+
+	webservices:
+
+
+		ATM machine
+	
+			sbi atm card
+
+					app1
+	end user 	atm machine--->bank app
+
+	icici		sbi atm	 -->icici app
+
+
+	RMI
+	EJB			java
+	SP
+	
+	RPC			c/C++
+	DCOM		.net
+	CORBA		interopearable 
+
+
+web services
+			we can share info between two interoperable applications
+
+		2 types
+			SOAP --->XML
+			REST --->XML,JSON,PT,HTML,JS
+
+
+			REST-->GET,POST,PUT,DELETE
+
+REST end points--->
+
+
+
+			java app  <---> python
+
+		URLlib3
+
+MYSQL
+
+
+DDL	-->create,alter,drop,truncate,rename
+DML -->insert,update,delete
+DRL -->select
+
+
+create database jpmc;#RDBMS-mysql,oracle,db2,postgres,....
+use jpmc;
+create table emps(eid int,ename varchar(15),esal int,edesg varchar(10));
+describe emps;
+alter table emps add eadd varchar(15);
+alter table emps drop eadd ;
+alter table emps change eid empno int;
+alter table emps rename employees;
+truncate table employees;
+drop table employees;
+
+insert into emps values(123,'suresh',23000,'developer');
+insert into emps values(124,'naresh',78000,'trainer');
+insert into emps values(125,'rajesh',45000,'admin');
+insert into emps values(126,'hitesh',65200,'developer');
+insert into emps values(127,'naresh',78450,'hr');
+
+update emps set esal=esal+2000;
+update emps set ename='sandeep' where eid=123;
+delete from emps where eid=123;
+select * from emps;
+select ename,edesg from emps;
+select * from emps where eid=126;
+select * from emps where esal between 23000 and 50000;
+
+truncate table emps;
+drop table emps;
+
+
+
+PDBC-->python database connectivity
+
+
+			py-->
+			
+			python-mysql-installer
+
+		pip install
+
+DJANGO:
+=========
+
+
+framework
+
+python  --2003
+
+2005
+
+	ADRIAN HOLOVATY
+
+	ORM
+	MVT
+
+		pip install django
+		django-admin --version
+		django-admin startproject demoapp
+		cd demoapp
+		python manage.py runserver
+		python manage.py startapp loginapp
+		
+		python manage.py migrate
+		
+		
+		
+	CrudProject Steps:
+========================
+py --version
+pip install django
+mysql
+VSCODE
+django-admin startproject crudproject
+python manage.py startapp crudapp
+	register the crudapp in settings.py(installed apps)	
+	define the model class
+	
+py manage.py makemigrations	
+py manage.py migrate	
+		
+		
+		
+		
+		
+		
